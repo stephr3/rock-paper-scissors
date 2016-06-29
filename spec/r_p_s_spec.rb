@@ -2,25 +2,25 @@ require('rspec')
 require('r_p_s')
 
 describe("String#beats?") do
-  it("returns true if rock is the object and scissors is the argument") do
-  expect("rock".beats?("scissors")).to(eq(true))
+  it("returns true if Rock is the object and Scissors is the argument") do
+  expect("Rock".beats?("Scissors")).to(eq(true))
   end
-  it("returns false if rock is the object and paper is the argument") do
-  expect("rock".beats?("paper")).to(eq(false))
+  it("returns false if Rock is the object and Paper is the argument") do
+  expect("Rock".beats?("Paper")).to(eq(false))
   end
-  it("returns true if scissors is the object and paper is the argument") do
-  expect("scissors".beats?("paper")).to(eq(true))
+  it("returns true if Scissors is the object and Paper is the argument") do
+  expect("Scissors".beats?("Paper")).to(eq(true))
   end
-  it("returns true if paper is the object and rock is the argument") do
-  expect("paper".beats?("rock")).to(eq(true))
+  it("returns true if Paper is the object and Rock is the argument") do
+  expect("Paper".beats?("Rock")).to(eq(true))
   end
-  it("returns false if scissors is the object and rock is the argument") do
-  expect("scissors".beats?("rock")).to(eq(false))
+  it("returns false if Scissors is the object and Rock is the argument") do
+  expect("Scissors".beats?("Rock")).to(eq(false))
   end
-  it("returns false if paper is the object and scissors is the argument") do
-  expect("paper".beats?("scissors")).to(eq(false))
+  it("returns false if Paper is the object and Scissors is the argument") do
+  expect("Paper".beats?("Scissors")).to(eq(false))
   end
   it("returns false if player one equals player two") do
-  expect("paper".beats?("paper")).to(eq(false))
+  expect("Paper".beats?("Paper")).to(eq(false))
   end
 end
